@@ -1,0 +1,324 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#container_nav{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(23, 139, 160);
+    
+}
+#container_nav #left ul{
+    display: inline-flex;
+    list-style: none;
+}
+#container_nav #left li{
+    padding: 15px;
+    text-align: center;     
+}
+
+#container_nav #left li a{
+    padding: 15px 25px;
+    width: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#container_nav #left li:hover{
+    background-color: whitesmoke ;
+}
+#container_nav #right{
+    padding: 15px 25px;
+}
+#container_nav #right a{
+    color: white;
+    padding: 16px 25px;
+}
+#container_nav #right a:hover {
+    background-color: whitesmoke;
+    color: black;   
+}
+.menu{
+    display: none;
+}
+#container_nav #left ul li:hover .menu{
+    display: block;
+    position: absolute;
+    background: rgb(23, 139, 160);
+    margin-top: 15px;
+    margin-left: -15px;  
+}
+#container_nav #left ul li:hover .menu ul{
+    display: block;  
+}
+#container_nav #left ul li:hover .menu ul li{
+    width: 300px;
+    padding: 10px;
+    background: transparent;
+    border-bottom: 1px dotted #fff;
+}
+#container_nav #left a:hover {
+    /* background-color: whitesmoke; */
+    color: black;   
+}
+
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+}
+
+#container #container_left .leftcontain{
+    
+    /* border: 2px solid black; */
+    margin: 5px;
+    font-size: 2 ;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 10px 8px #888888;
+
+}
+#container #container_left #leftrow1{
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+/* #container #container_left #leftrow1{
+    display: block;
+    color: white;
+    height: 148px;
+    
+} */
+#container #container_left #leftrow2{
+    display: block;
+    color: white;
+    margin-top: 10px;
+    
+}
+#container #container_left #leftrow3{
+    display: inline-block;
+    color: black;
+    margin-top: 5px;
+    
+}
+#container #container_left #leftrow3 h3{
+    margin-bottom: 10px;  
+    margin-left: 5px; 
+}
+#container #container_left #leftrow3 p{
+    margin-bottom: 10px; 
+    margin-left: 5px;   
+    font-size: 0.8em;
+}
+
+#container #container_mid .leftcontain{
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 10px 8px #888888;
+}
+#container #container_mid #midrow1{
+    display: block;
+    padding: 10px;
+    
+}
+#container #container_mid #midrow1 h6{
+    margin: 10px;
+    font-weight: 400px;
+    font-size: 1.2rem;
+    opacity: 0.5;
+}
+#container #container_mid #midrow1 p{
+    border: 1px solid rgb(46, 37, 37);
+    margin: 10px 10px;
+    padding: 10px 5px;
+    
+}
+#container #container_mid #midrow1 button{
+    border: 1px solid rgb(46, 37, 37);
+    margin: 0 10px;
+    padding: 10px 8px;
+    background-color: rgb(43, 80, 12);;
+    color: white;
+}
+#container #container_mid #midrow1 button:hover{
+    background-color: rgb(141, 167, 141);
+    color: black;
+    
+}
+#container #container_mid #midrow2{
+    display: block;
+    position: relative;
+    padding: 10px;
+    /* padding: 10px; */
+    
+}
+.midspan{
+    float: right;   
+    opacity: 0.5;
+}
+.midh4{
+    position: absolute;
+    top: 35px;
+    left: 100px;
+
+}
+.midp{
+    padding: 15px 5px;
+}
+.midimg{
+    max-width:350px;
+    margin: 10px;
+}
+#container #container_mid #midrow3{
+    display: block;
+    position: relative;
+    padding: 10px;
+    /* padding: 10px; */
+    
+}
+#container #container_mid #midrow4{
+    display: block;
+    position: relative;
+    padding: 10px;
+    /* padding: 10px; */
+    
+}
+
+#container #container_right{
+    /* display: grid;
+    grid-template-rows: 1fr 3fr 1fr; */  
+}
+#container #container_right .leftcontain{
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 10px 8px #888888;
+}
+#container #container_right #rightrow1{
+    display: block;
+    text-align: center;
+    padding: 0.5px 16px;
+    /* padding: 10px; */
+    
+}
+#container #container_right #rightrow1 p{
+    margin: 15px 0;
+    
+}
+#container #container_right #rightrow1 img{
+    max-width:175px;
+    margin: 15px 0;
+}
+#container #container_right #rightrow1 button{
+    padding: 8px 50px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#container #container_right #rightrow1 button:hover{
+    background-color: blanchedalmond;
+}
+#container #container_right #rightrow2{
+    display: block;
+    text-align: center;
+    padding: 0.5px 16px;
+    /* padding: 10px; */
+    
+}
+#container #container_right #rightrow2 img{
+    max-width: 80px;
+    
+}
+#container #container_right #rightrow2 p{
+    margin: 15px 0;
+    
+}
+#container #container_right #rightrow2 #button1{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border: none;
+    padding: 5px 24px;
+    background-color: rgb(158, 62, 62);
+    
+}
+#button1:hover,
+#button2:hover{
+    background-color: honeydew;
+    cursor: pointer;
+}
+#container #container_right #rightrow2 #button2{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border: none;
+    padding: 5px 24px;
+    background-color: rgb(108, 180, 108);   
+}
+
+#container #container_right #rightrow3{
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 10px;
+    
+}
+#container #container_right #rightrow4{
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 10px;
+    
+}
+#foot0{
+    background-color: lightslategray;
+    color: white;
+    padding: 30px;
+    font-size: 1.4rem;
+}
+#foot1{
+    background-color: gray;
+    color: white;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+.box{
+    background-color: rgb(36, 118, 143);
+    padding: 10px 0;
+}
+.box:hover{
+    background-color: rgb(131, 192, 211);
+    color: black;
+}
+.profilepic{
+    border-radius: 50%;
+    height: 106px;
+    width: 106px;
+}
+.profilepicpost{
+    border-radius: 50%;
+    width: 60px;
+    margin: 5px;
+}
+.span{
+    display: inline-block;
+    background-color: rgb(124, 179, 196);
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    margin: 1px;
+}
+.midbutton{
+    border: 1px solid rgb(46, 37, 37);
+    margin: 0 10px;
+    padding: 10px 10px;
+    background-color: rgb(43, 80, 12);;
+    color: white;
+}
+.midbutton:hover{
+    background-color: rgb(141, 167, 141);
+    color: black;
+    
+}
